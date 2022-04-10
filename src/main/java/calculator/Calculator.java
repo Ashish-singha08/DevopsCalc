@@ -69,6 +69,7 @@ public class Calculator {
                     number2 = scanner.nextDouble();
                     System.out.println("Addition of "+number1+" and "+number2+" is : " + calculator.add(number1,number2));
                     System.out.println("\n");
+                    break;
                 default:
                     System.out.println("Exiting....");
                     return;
