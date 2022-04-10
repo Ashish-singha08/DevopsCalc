@@ -19,7 +19,7 @@ public class Calculator {
         do {
             System.out.println("Calculator-DevOps, Choose to perform operation");
             System.out.print("Press 1 to find factorial\nPress 2 to find Square root\nPress 3 to find power\nPress 4 to find natural logarithm\n" +
-                    "Press 5 to exit\nEnter your choice: ");
+                    "Press 5 to add\nPress 6 to exit\nEnter your choice: ");
             int choice;
             try {
                 choice = scanner.nextInt();
@@ -62,6 +62,13 @@ public class Calculator {
                     System.out.println("\n");
 
                     break;
+                case 5:
+                    System.out.print("Enter the first number : ");
+                    number1 = scanner.nextDouble();
+                    System.out.print("Enter the second number : ");
+                    number2 = scanner.nextDouble();
+                    System.out.println("Addition of "+number1+" and "+number2+" is : " + calculator.add(number1,number2));
+                    System.out.println("\n");
                 default:
                     System.out.println("Exiting....");
                     return;
@@ -69,7 +76,12 @@ public class Calculator {
         } while (true);
     }
 
-
+    public double add(double a, double b){
+        logger.info("[ADDITION OF" + a+ "AND] - " + b);
+        double result = a+b;
+        logger.info("[RESULT - ADDITION] - " + result);
+        return result;
+    }
     public double factoral(double number1) {
         logger.info("[FACTORIAL] - " + number1);
         double result = fact(number1);
