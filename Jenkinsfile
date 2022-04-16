@@ -3,30 +3,27 @@ pipeline {
         dockerImage =''
     }
     agent any
-    triggers {
-        pollSCM('* * * * *')
-    }
     stages {
-        stage('Git Pull') {
+        stage('To Clone the Git Repo') {
             steps {
                git 'https://github.com/Ashish-singha08/DevopsCalc'
             }
         }
-        stage('Maven Build') {
+        stage('To Build project using Maven') {
             steps {
               script{
                   sh 'mvn clean install'
               }
             }
         }
-        stage('Docker Build Image') {
+        stage('To Build Docker Image in local') {
             steps {
                 script{
                   dockerImage = docker.build("ashishsinghal780/devopscalc:latest")  
                 }
             }
         }
-        stage('Docker Push Image') {
+        stage('To Push local image to Docker Hub') {
             steps {
                 script{
                     docker.withRegistry('','docker-cred'){
@@ -35,9 +32,9 @@ pipeline {
                 }
             }
         }
-        stage('Ansibel pull docker image'){
+        stage('To Deploy docker image using Ansible'){
             steps{
-                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'deploy-docker/inventory', playbook: 'deploy-docker/calc-deploy.yml', sudoUser: null
+                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'ansibleConfig/inventory', playbook: 'ansibleConfig/playbook.yml', sudoUser: null
             }
         }
     }
