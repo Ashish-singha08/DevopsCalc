@@ -56,8 +56,8 @@ public class CalculatorTest {
     }
     @Test
     public void addTruePositive(){
-        assertNotEquals("Finding Addition for False Positive", 3, calculator.add(3,5), DELTA);
-        assertNotEquals("Finding Addition for False Positive", 12, calculator.add(4,8), DELTA);
+        assertEquals("Finding Addition for True Positive", 8, calculator.add(3,5), DELTA);
+        assertEquals("Finding Addition for True Positive", 12, calculator.add(4,8), DELTA);
 
     }
     @Test
