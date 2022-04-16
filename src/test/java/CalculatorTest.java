@@ -54,6 +54,17 @@ public class CalculatorTest {
         assertNotEquals("Finding square root for False Positive", 0, calculator.sqroot(4), DELTA);
 
     }
+    @Test
+    public void addTruePositive(){
+        assertNotEquals("Finding Addition for False Positive", 3, calculator.add(3,5), DELTA);
+        assertNotEquals("Finding Addition for False Positive", 12, calculator.add(4,8), DELTA);
 
+    }
+    @Test
+    public void addFalsePositive(){
+        assertNotEquals("Finding Addition for False Positive", 9, calculator.add(3,7), DELTA);
+        assertNotEquals("Finding Addition for False Positive", 10, calculator.add(3,2), DELTA);
+
+    }
 
 }
