@@ -18,7 +18,7 @@ public class Calculator {
         double number1, number2;
         do {
             System.out.println("Welcome to DevopsCalc by MT2021025 Ashish Singhal :)");
-            System.out.println("Choose From The Menu -->");
+            System.out.println("Perform Operation From The Menu -->");
             System.out.print("1 --> factorial\n2 --> Square root\n3 --> power\n4 --> natural logarithm\n" +
                     "5 --> Add \n6 --> \nEnter your choice: ");
             int choice;
