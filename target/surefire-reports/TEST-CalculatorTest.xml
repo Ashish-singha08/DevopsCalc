@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="CalculatorTest" time="2.96" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="CalculatorTest" time="3.28" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.14.1+1-Ubuntu-0ubuntu1.20.04"/>
@@ -61,14 +61,14 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="CalculatorTest" name="factorialFalsePositive" time="2.651"/>
-  <testcase classname="CalculatorTest" name="sqrootFalsePositive" time="0.061"/>
-  <testcase classname="CalculatorTest" name="addTruePositive" time="0.041"/>
-  <testcase classname="CalculatorTest" name="logTruePositive" time="0.031"/>
-  <testcase classname="CalculatorTest" name="factorialTruePositive" time="0.003"/>
-  <testcase classname="CalculatorTest" name="addFalsePositive" time="0.022"/>
-  <testcase classname="CalculatorTest" name="powerFalsePositive" time="0.027"/>
-  <testcase classname="CalculatorTest" name="powerTruePositive" time="0.026"/>
-  <testcase classname="CalculatorTest" name="logFalsePositive" time="0.075"/>
-  <testcase classname="CalculatorTest" name="sqrootTruePositive" time="0.023"/>
+  <testcase classname="CalculatorTest" name="factorialFalsePositive" time="2.939"/>
+  <testcase classname="CalculatorTest" name="sqrootFalsePositive" time="0.104"/>
+  <testcase classname="CalculatorTest" name="addTruePositive" time="0.025"/>
+  <testcase classname="CalculatorTest" name="logTruePositive" time="0.044"/>
+  <testcase classname="CalculatorTest" name="factorialTruePositive" time="0.001"/>
+  <testcase classname="CalculatorTest" name="addFalsePositive" time="0.024"/>
+  <testcase classname="CalculatorTest" name="powerFalsePositive" time="0.015"/>
+  <testcase classname="CalculatorTest" name="powerTruePositive" time="0.058"/>
+  <testcase classname="CalculatorTest" name="logFalsePositive" time="0.033"/>
+  <testcase classname="CalculatorTest" name="sqrootTruePositive" time="0.037"/>
 </testsuite>
