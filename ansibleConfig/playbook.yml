@@ -29,5 +29,5 @@
     - name: Pull image from docker
       docker_image:
         name: ashishsinghal780/devopscalc
-        tag: latest
+        tag: lat
         source: pull
