@@ -30,3 +30,9 @@
       docker_image:
         name: ashishsinghal780/devopscalc
         source: pull
+        
+    - name: Create default container
+      docker_container:
+        name: calc1
+        image: ashishsinghal780/devopscalc
+        state: present
