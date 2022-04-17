@@ -26,7 +26,7 @@
       pip:
         name: docker
         
-    - name: Pull image
+    - name: Pull image from docker
       docker_image:
         name: ashishsinghal780/devopscalc
         tag: latest
