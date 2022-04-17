@@ -72,7 +72,7 @@ public class Calculator {
                     System.out.println("\n");
                     break;
                 default:
-                    System.out.println("Exiting....");
+                    System.out.println("Shutting Down DevopsCals....Bye!!");
                     return;
             }
         } while (true);
