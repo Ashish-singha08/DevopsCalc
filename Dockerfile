@@ -3,7 +3,7 @@ RUN mkdir -p /workspace
 WORKDIR /workspace
 COPY pom.xml /workspace
 COPY src /workspace/src
-RUN mvn clean install -Dmaven.test.skip=true
+RUN mvn clean install 
 
 FROM openjdk
 COPY --from=build /workspace/target/*.jar app.jar
